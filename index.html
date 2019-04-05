@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let circle = function (radius,color) {
+        this.radius = radius;
+        this.color = color;
+        this.area = Math.PI*radius*radius;
+      this.getRadius = function () {
+          return this.radius;
+      }
+      this.getColor = function () {
+            return this.color;
+        }
+
+      this.getArea = function () {
+          return this.area;
+      }
+
+      this.setRadius = function (radius) {
+          this.radius = radius;
+      }
+      this.setColor = function (color) {
+          this.color = color;
+        }
+    }
+
+    let c1 = new circle(2,'black');
+    let radius = c1.getRadius();
+    let color = c1.getColor();
+    let area = c1.getArea();
+
+
+    // let c1 = new circle();
+    // c1.setRadius(2);
+    // c1.setColor('pink');
+    // let radius = c1.radius;
+    // let color = c1.color;
+
+    alert(area);
+
+</script>
+</body>
+</html>
